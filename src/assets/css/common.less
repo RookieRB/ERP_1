@@ -1,0 +1,46 @@
+:root {
+  --light_gray: #f6f6f6;
+  --shallow_gray: #b9babf;
+  --shallow_gray_1: #e2f4e7;
+  --light_green: #01be6c;
+  --shallow_red: #ff6347;
+  --light_red: #ff0000;
+  --shallow_yellow: #ffa500;
+  --light_yellow: #f8bc33;
+  --light_blue1: #00aeec;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  background-color: #ead6ee;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #a0f1ea;
+}
+
+.card-style() {
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(18.5px);
+  -webkit-backdrop-filter: blur(18.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+  -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+}
+
+// 跳跃回来
+@keyframes jumpback {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
