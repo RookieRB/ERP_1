@@ -9,10 +9,18 @@ import PrimeVue from 'primevue/config'
 import Aura from '@primevue/themes/aura'
 import 'element-plus/dist/index.css'
 
+import VueVideoPlayer from '@videojs-player/vue'
+import 'video.js/dist/video-js.css'
+
+
+
 import '@/assets/css/index.less'
 import 'normalize.css'
 
 const app = createApp(App)
+
+
+app.use(VueVideoPlayer)
 
 app.use(icon)
 app.use(myIcon)
@@ -22,6 +30,7 @@ app.use(myIcon)
 //     preset: Aura,
 //   },
 // })
+
 app.use(pinia)
 app.use(router)
 

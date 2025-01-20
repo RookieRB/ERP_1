@@ -130,9 +130,9 @@ const changeSubMenuPageClickHandler = (page: number) => {
   localCache.setCache(
     CURRENT_SUBMENU_PAGE,
     props.navBarArray[currentPage.value].children?.[currentSubmenuPage.value],
-  )                                                     
+  )
 
-  // 切换里面页面的同时需要将当前页面的信息发给我们的headr首页，让其显示出来
+  // 切换里面页面的同时需要将当前页面的信息发给我们的header首页，让其显示出来
   const path = props.navBarArray[currentPage.value].children?.[currentSubmenuPage.value]?.path
   router.push(path as string)
   emit(
